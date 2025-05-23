@@ -14,6 +14,7 @@ body {
   padding: 20px 30px 30px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 24px #0008;
+  position: relative;
 }
 
 #gameCanvas {
@@ -47,4 +48,68 @@ button {
 }
 button:hover {
   background: #388e3c;
+}
+
+#pause-btn {
+  display: block;
+  margin: 0 auto 12px auto;
+  background: #ff9800;
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 28px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0004;
+  transition: background 0.2s;
+}
+#pause-btn:hover {
+  background: #e65100;
+}
+
+#map-select-modal {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#map-select-box {
+  background: #fff;
+  color: #222;
+  border-radius: 16px;
+  padding: 36px 48px 32px 48px;
+  box-shadow: 0 8px 32px #0006;
+  text-align: center;
+}
+#map-select-box h2 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  color: #388e3c;
+}
+.map-btn {
+  font-size: 20px;
+  margin: 0 18px;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 8px;
+  background: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #0002;
+}
+.map-btn:hover {
+  background: #388e3c;
+}
+
+body.grass-bg {
+  background: linear-gradient(135deg, #b6e59e 0%, #e0ffd0 100%);
+}
+body.desert-bg {
+  background: linear-gradient(135deg, #ffe29e 0%, #ffe7c7 100%);
+}
+body.snow-bg {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f8fdff 100%);
 } 

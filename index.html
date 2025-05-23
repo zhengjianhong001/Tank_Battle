@@ -9,6 +9,15 @@
 <body>
   <h1>坦克大战小游戏</h1>
   <div id="game-container">
+    <div id="map-select-modal">
+      <div id="map-select-box">
+        <h2>选择地图</h2>
+        <button class="map-btn" onclick="selectMap('grass')">草地</button>
+        <button class="map-btn" onclick="selectMap('desert')">沙漠</button>
+        <button class="map-btn" onclick="selectMap('snow')">雪地</button>
+      </div>
+    </div>
+    <button id="pause-btn" onclick="togglePause()">暂停</button>
     <canvas id="gameCanvas" width="600" height="400"></canvas>
     <div id="score">得分：0</div>
     <div id="game-over" style="display:none;">游戏结束！<br><button onclick="location.reload()">重新开始</button></div>
